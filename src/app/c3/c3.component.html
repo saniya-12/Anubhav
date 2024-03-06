@@ -1,0 +1,22 @@
+
+<!-- <h2 [innerText] = "title" [style.color] = "mytColor"></h2> -->
+<!-- <button [disabled] ="isDisabled"> I am disabled</button> -->
+
+<!-- <p [style.background-color] = "mybgColor" [style.color] = "myColor">Text Color is styled using style binding</p> Background color can be changed -->
+
+<!-- <br>
+<p [class] = "myCSSClass">myClassProperty</p> -->
+
+<!-- Event Handling -->
+<!-- <button (click) = "onSave()">Save</button> -->
+<!-- <button (click) = "onSave($event)">Save</button>/ -->
+<!-- <button #box (click) = "onSave(box.value)" value="'save">Save</button> -->
+
+<!-- <button type = "button" #box value="Save Nothing" (click) = "onSave1(box.value)">Save</button> -->
+
+<!-- TWO WAY BINDING -->
+
+<input type="text" [(ngModel)]="username">
+value of username = {{username}}
+<input type="checkbox" id = "Checked" [(ngModel)] = "isChecked">
+value of isChecked = {{isChecked}}

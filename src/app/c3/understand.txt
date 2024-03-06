@@ -1,0 +1,15 @@
+One way Binding = view to component
+Interpolation
+Event Binding
+Property Binding
+
+Two Way Binding = view to component and component to view
+Property Binding []
+Event Binding ()
+
+[] = box
+() = banana
+[()] = banana in a box
+
+// ngModel Directive \\
+standalone directive = it can be used in html and dont need to do anything else

@@ -1,0 +1,9 @@
+<p>parent works!</p>
+
+<h1>Parent Component</h1>
+<button (click) = "deposit()">Deposit Rs. 500/-</button>
+<p>Balance Amount is {{pAmount}}</p>
+Your child has spent {{pSpent}} in a day!!!! <br><br>
+<hr>
+
+<app-child [(amount)] = "pAmount" [(spent)] = "pSpent"></app-child>

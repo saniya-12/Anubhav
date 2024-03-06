@@ -1,0 +1,4 @@
+Two way Binding
+ng generate component child 
+or 
+ng g c child
