@@ -1,0 +1,8 @@
+inbuilt paramter for ngFOR
+    index (let i = index; )
+    count (let c = count; )
+    first = just want to work on first 
+    last
+    even
+    odd
+    

@@ -1,6 +1,13 @@
 <p>movies works!</p>
-<select name="Choice " id="choice">
-    <option *ngFor="let m of movies">
-        {{m.name}} - - - - - - - - {{m.year}}
-    </option>
-</select>
+
+<div name="Choice " id="choice">
+    <p *ngFor="let m of movies; let i = index; let c = count;
+        let o = odd; let e = even;"
+        [ngClass] = '{oddCls:o, evenCls:e}'>
+        {{i}} 
+        <!-- Gives the index number -->
+        {{c}}
+        <!-- count the movies -->
+        {{m.name}}
+    </p>
+</div>
