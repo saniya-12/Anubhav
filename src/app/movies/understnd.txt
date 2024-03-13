@@ -5,4 +5,5 @@ inbuilt paramter for ngFOR
     last
     even
     odd
-    
+
+ngclass should be also added in ts file
