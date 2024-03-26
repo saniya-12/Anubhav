@@ -7,3 +7,21 @@ inbuilt paramter for ngFOR
     odd
 
 ngclass should be also added in ts file
+
+ngIf:
+    *ngIf
+    abc:boolean = false;
+
+
+    We can also use:
+
+    <p *ngIf = "showMe; then thenBlock2 else elseBlock2">
+        This isnt rendered
+    </p>
+    <ng-template #thenBlock2>
+        <p>If statement</p>
+    </ng-template>
+
+    <ng-template #elseBlock2>
+        <p>Else statement</p>
+    </ng-template>

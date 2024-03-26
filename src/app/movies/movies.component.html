@@ -10,4 +10,29 @@
         <!-- count the movies -->
         {{m.name}}
     </p>
+
+     <h3>
+        Hey buddy! It's ngIF here
+    </h3>
+    <br>
+    <div>
+        Show <input type="checkbox" [(ngModel)] = "showMe" />
+    </div>
+    <!-- <p *ngIf="showMe">
+        showMe is checked
+    </p>
+    <p *ngIf="!showMe">
+        showMe is not checked
+    </p> -->
+
+    <p *ngIf = "showMe; then thenBlock2 else elseBlock2">
+        This isnt rendered
+    </p>
+    <ng-template #thenBlock2>
+        <p>If statement (i.e. Checked)</p>
+    </ng-template>
+
+    <ng-template #elseBlock2>
+        <p>Else statement (i.e. Not Checked)</p>
+    </ng-template>
 </div>
