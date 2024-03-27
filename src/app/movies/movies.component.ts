@@ -1,4 +1,4 @@
-import { NgClass, NgFor, NgIf } from '@angular/common';
+import { CommonModule, NgClass, NgFor, NgIf, NgSwitch } from '@angular/common';
 import { Component } from '@angular/core';
 import { movie } from './movie';
 import { FormsModule } from '@angular/forms';
@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-movies',
   standalone: true,
-  imports: [NgFor,NgClass, NgIf, FormsModule],
+  imports: [NgFor,NgClass, NgIf, FormsModule, NgSwitch, CommonModule],
   templateUrl: './movies.component.html',
   styleUrl: './movies.component.css'
 })
@@ -16,5 +16,7 @@ export class MoviesComponent {
   // ctrl + space
 
   showMe:boolean = false;
+  num:number = 0;
+  // choice:string = "";
 
 }

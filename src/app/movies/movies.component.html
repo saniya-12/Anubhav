@@ -1,38 +1,24 @@
-<p>movies works!</p>
+<!-- <p>movies works!</p> -->
 
-<div name="Choice " id="choice">
-    <p *ngFor="let m of movies; let i = index; let c = count;
-        let o = odd; let e = even;"
-        [ngClass] = '{oddCls:o, evenCls:e}'>
-        {{i}} 
-        <!-- Gives the index number -->
-        {{c}}
-        <!-- count the movies -->
-        {{m.name}}
-    </p>
+<div>
+    Input String: <input type="number" [(ngModel)] = "num">
+    <div [ngSwitch] = "num">
+        <ul *ngSwitchCase = '1'>{{movies[0].name}}</ul>
+        <ul *ngSwitchCase = '2'>{{movies[1].name}}</ul>
+        <ul *ngSwitchCase = '3'>{{movies[2].name}}</ul>
+        <ul *ngSwitchCase = 0> Nothing is Selected</ul>
 
-     <h3>
-        Hey buddy! It's ngIF here
-    </h3>
-    <br>
-    <div>
-        Show <input type="checkbox" [(ngModel)] = "showMe" />
+        <ul *ngSwitchDefault>Wait for new movies</ul>
     </div>
-    <!-- <p *ngIf="showMe">
-        showMe is checked
-    </p>
-    <p *ngIf="!showMe">
-        showMe is not checked
-    </p> -->
-
-    <p *ngIf = "showMe; then thenBlock2 else elseBlock2">
-        This isnt rendered
-    </p>
-    <ng-template #thenBlock2>
-        <p>If statement (i.e. Checked)</p>
-    </ng-template>
-
-    <ng-template #elseBlock2>
-        <p>Else statement (i.e. Not Checked)</p>
-    </ng-template>
 </div>
+
+<!-- <div>
+    Input String: <input type="text" [(ngModel)] = "choice">
+    <div [ngSwitch] = "choice">
+        <ul *ngSwitchCase = '"1"'>{{movies[0].name}}</ul>
+        <ul *ngSwitchCase = '"2"'>{{movies[1].name}}</ul>
+        <ul *ngSwitchCase = '"3"'>{{movies[2].name}}</ul>
+
+        <ul *ngSwitchDefault>Wait for new movies</ul>
+    </div>
+</div> -->
