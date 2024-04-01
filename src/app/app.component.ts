@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { C3Component } from './c3/c3.component';
 import { ParentComponent } from './parent/parent.component';
 import { MoviesComponent } from './movies/movies.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @Component({ //Decorator
   selector: 'demo',
   standalone: true,
-  imports: [RouterOutlet,C3Component, ParentComponent, MoviesComponent],
+  imports: [RouterOutlet,C3Component, ParentComponent, MoviesComponent, PipesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

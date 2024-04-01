@@ -1,0 +1,39 @@
+<!-- <p>pipes works!</p> -->
+<h2>Using Pipes on Text</h2>
+Original String: <span>{{myString}}</span><br>
+Lowercase: <span>{{myString | lowercase}}</span><br>
+Uppercase: <span>{{myString | uppercase}}</span><br>
+TitleCase: <span>{{myString | titlecase}}</span><br>
+<br>
+
+
+<h2>Using Pipes on Number</h2>
+Percent: <span>{{per | percent:'2.1-1'}}</span><br><br>
+<!-- 2.1-1 -> Minimum Formatting Numbwea. [2 (minfraction length) (e.g. if the number is 12 and we write 4 then its 0012) , 1-5 (min 1 to max 5 decimal points)  ] -->
+
+Decimal: <span>{{dec | number:'3.2-3'}}</span><br><br>
+
+<span>
+{{curr | currency:'CAD':'code':'4.2-2'}}<br>
+{{curr | currency:'INR':'symbol':'4.2-2'}}<br>
+{{curr | currency:'CAD':'symbol':'4.2-2'}}<br>
+{{curr | currency:'CAD':'symbol-narrow':'4.2-2'}}<br>
+<!-- CAD/USD/EUR etc.... -->
+<br>
+</span>
+
+<h2>Using Dates: </h2>
+Date: {{currentDate | date}}<br>
+Date: {{currentDate | date:'long'}}<br>
+Date: {{currentDate | date:'short'}}<br>
+Date: {{currentDate | date:'medium'}}<br>
+Date: {{currentDate | date:'full'}}<br>
+Date: {{currentDate | date:'longDate'}}<br>
+Date: {{currentDate | date:'mediumTime'}}<br>
+<!-- //long, short, medium, full
+// longDate, mediumTime, etc -->
+Date: {{currentDate | date:'dd*MM*yy'}}<br>
+
+<h2>Using JSON:</h2>
+myObj:<pre>{{myObj }}</pre>
+myObj:<pre>{{myObj | json}}</pre>
