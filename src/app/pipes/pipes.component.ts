@@ -1,10 +1,10 @@
-import { CurrencyPipe, DatePipe, DecimalPipe, JsonPipe, LowerCasePipe, PercentPipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
+import { CurrencyPipe, DatePipe, DecimalPipe, JsonPipe, LowerCasePipe, PercentPipe, SlicePipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-pipes',
   standalone: true,
-  imports: [UpperCasePipe, LowerCasePipe, TitleCasePipe, CurrencyPipe, DecimalPipe, PercentPipe, DatePipe, JsonPipe ],
+  imports: [UpperCasePipe, LowerCasePipe, TitleCasePipe, CurrencyPipe, DecimalPipe, PercentPipe, DatePipe, JsonPipe, SlicePipe ],
   templateUrl: './pipes.component.html',
   styleUrl: './pipes.component.css'
 })
@@ -19,4 +19,6 @@ myString = "TypeScript is a SUPERSET of JavaScript"
   currentDate:Date = new Date()
 
   myObj = {name:'Anubhav', email:'anubhav@gmail.com', job:'Student'}
+
+  myArray : any[] = ['Apple', 'Banana', 'Orange', 'Grapes'];
 }
