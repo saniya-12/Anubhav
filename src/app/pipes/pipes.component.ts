@@ -1,10 +1,10 @@
-import { CurrencyPipe, DatePipe, DecimalPipe, JsonPipe, LowerCasePipe, PercentPipe, SlicePipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
+import { CurrencyPipe, DatePipe, DecimalPipe, JsonPipe, LowerCasePipe, NgFor, PercentPipe, SlicePipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-pipes',
   standalone: true,
-  imports: [UpperCasePipe, LowerCasePipe, TitleCasePipe, CurrencyPipe, DecimalPipe, PercentPipe, DatePipe, JsonPipe, SlicePipe ],
+  imports: [UpperCasePipe, LowerCasePipe, TitleCasePipe, CurrencyPipe, DecimalPipe, PercentPipe, DatePipe, JsonPipe, SlicePipe, NgFor ],
   templateUrl: './pipes.component.html',
   styleUrl: './pipes.component.css'
 })

@@ -41,3 +41,13 @@ myObj:<pre>{{myObj | json}}</pre>
 <h2>Slcied Array</h2>
 <span>{{myArray | slice:1:3 }}</span><br>
 <span>{{myArray | slice:0:4 }}</span>
+<br>
+<br>
+<div *ngFor = 'let i of myArray | slice : 1:3'>
+    {{i|uppercase}}
+</div>
+<br>
+<br>
+{{currentDate | date:'medium' | uppercase}}
+<br>
+<br>
