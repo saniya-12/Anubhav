@@ -1,0 +1,17 @@
+import { NgFor } from '@angular/common';
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-table-component',
+  standalone: true,
+  imports: [NgFor],
+  templateUrl: './table-component.component.html',
+  styleUrl: './table-component.component.css'
+})
+export class TableComponentComponent {
+  items: any[] = [
+    { id: 1, name: 'John Doe', email: 'john@example.com' },
+    { id: 2, name: 'Jane Smith', email: 'jane@example.com' },
+    { id: 3, name: 'Bob Johnson', email: 'bob@example.com' }
+  ];
+}
