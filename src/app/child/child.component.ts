@@ -23,13 +23,16 @@ import { Component, DoCheck, EventEmitter, Input, OnChanges, OnInit, Output, Sim
 // }
 export class ChildComponent implements DoCheck, OnChanges, OnInit {
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    //throw new Error('Method not implemented.');
+    console.log('ChildComponent ngOnInit');
   }
   ngOnChanges(changes: SimpleChanges): void {
-    throw new Error('Method not implemented.');
+    // throw new Error('Method not implemented.');
+    console.log('ChildComponent ngOnChanges');
   }
   ngDoCheck(): void {
-    throw new Error('Method not implemented.');
+    // throw new Error('Method not implemented.');
+    console.log('ChildComponent ngDoCheck');
   }
   @Input() amount: number = 0
   @Output() amountChange : EventEmitter<number> = new EventEmitter<number>;

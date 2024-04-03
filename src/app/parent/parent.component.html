@@ -1,6 +1,6 @@
 <!-- <p>parent works!</p> -->
 
-<h1>Parent Component</h1>
+<!-- <h1>Parent Component</h1>
 <br>
 <button (click) = "deposit()">Deposit Rs. 500/-</button>
 <br>
@@ -9,4 +9,16 @@
 Your child has spent {{pSpent}} in a day!!!! <br><br>
 <hr>
 
-<app-child [(amount)] = "pAmount" [(spent)] = "pSpent"></app-child>
+<app-child [(amount)] = "pAmount" [(spent)] = "pSpent"></app-child> -->
+
+<h1>Parent Component</h1>
+<br>
+<button (click) = "deposit()">Deposit Rs. 500/-</button>
+<br>
+<child [(amount)] = "pAmount" [(spent)] = "pSpent">Content Projection Through Parent</child>
+<p>Balance Amount is {{pAmount}}</p>
+<br>
+Your child has spent {{pSpent}} in a day!!!! <br><br>
+<hr>
+
+<!-- <app-child [(amount)] = "pAmount" [(spent)] = "pSpent"></app-child> -->
