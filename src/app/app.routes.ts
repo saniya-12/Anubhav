@@ -10,6 +10,7 @@ export const routes: Routes = [
     { path:'', component:PipesComponent}, // it will start by default. 
     // {path:'login', redirectTo: 'PipesComponent'}
     {path:'login', redirectTo: 'c3'}
+    // this will redirect to c3
 ];
 
 // ng g c componentname
