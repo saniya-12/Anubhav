@@ -6,11 +6,12 @@ import { MoviesComponent } from './movies/movies.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { TableComponentComponent } from './table-component/table-component.component';
 import { NgFor } from '@angular/common';
+import { ObservablesComponent } from './observables/observables.component';
 
 @Component({ //Decorator
   selector: 'demo',
   standalone: true,
-  imports: [RouterOutlet,C3Component, ParentComponent, MoviesComponent, PipesComponent, TableComponentComponent],
+  imports: [RouterOutlet,C3Component, ParentComponent, MoviesComponent, PipesComponent, TableComponentComponent, ObservablesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -13,3 +13,4 @@ Kinds of Directives
     ngFor
 3. Attribute Directives
 
+Observables
