@@ -14,3 +14,4 @@ Kinds of Directives
 3. Attribute Directives
 
 Observables
+of - stream multiple arrays
