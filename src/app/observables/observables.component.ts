@@ -24,6 +24,6 @@ export class ObservablesComponent implements OnInit{
     setTimeout(() => observer.next(3),1000)
     setTimeout(() => observer.next(4),1000)
     observer.next(17)
-    observer.error('error generated');
+    //observer.error('error generated');
   })
 }
