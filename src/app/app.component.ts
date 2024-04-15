@@ -7,11 +7,12 @@ import { PipesComponent } from './pipes/pipes.component';
 import { TableComponentComponent } from './table-component/table-component.component';
 import { NgFor } from '@angular/common';
 import { ObservablesComponent } from './observables/observables.component';
+import { InjectiblesComponent } from './injectibles/injectibles.component';
 
 @Component({ //Decorator
   selector: 'demo',
   standalone: true,
-  imports: [RouterOutlet,C3Component, ParentComponent, MoviesComponent, PipesComponent, TableComponentComponent, ObservablesComponent],
+  imports: [RouterOutlet,C3Component, ParentComponent, MoviesComponent, PipesComponent, TableComponentComponent, ObservablesComponent, InjectiblesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

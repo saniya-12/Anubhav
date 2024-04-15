@@ -1,19 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductsService } from '../products.service';
+import { ProductsService, products } from '../products.service';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-injectibles',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './injectibles.component.html',
   styleUrl: './injectibles.component.css'
 })
 export class InjectiblesComponent implements OnInit {
 
-  ps = new ProductsService();
+  // ps = new ProductsService();
+  products:products[] = [];
+  constructor(private ps: ProductsService) { }
 
   ngOnInit(): void {
-    // this.products = this.ps.getProducts();
+    this.products = this.ps.getProducts();
   }
 
 }

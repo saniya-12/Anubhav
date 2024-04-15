@@ -1,0 +1,10 @@
+if the data is static as we write the data statically. => Its tightly coupled
+object of service is the static method where coupling is tight
+It wont reflect on other components
+
+Dependency Injection
+Loosely Coupling => Dynamically
+
+Libraries = Dependency
+Here Dependency is service
+Always done inside constructor only
