@@ -6,8 +6,6 @@ import { MoviesComponent } from './movies/movies.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { TableComponentComponent } from './table-component/table-component.component';
 import { NgFor } from '@angular/common';
-import { ObservablesComponent } from './observables/observables.component';
-import { InjectiblesComponent } from './injectibles/injectibles.component';
 
 @Component({ //Decorator
   selector: 'demo',
@@ -19,5 +17,40 @@ import { InjectiblesComponent } from './injectibles/injectibles.component';
 // Starts the practice
 
 export class AppComponent {
-  title = 'Anubhav';
+  title = 'angular';
 }
+
+// import { NgFor } from '@angular/common'
+// import {product} from './product.model'
+// @Injectable({......
+  //})
+
+//   export class product services{
+//     get products ( ): product[]{
+//       return [
+//         { id:1,name:'Mobile'},
+//         { id:2,name:'Laptop'},
+//         { id:3,name:'EArphone'},
+      
+//       ];
+//     }
+//   }
+
+//   export class productcomponent implements onInit{
+//     prod:product[]=[];
+//    // ps=new productservices();
+//    constructor(private ps: productservice){ } //
+
+//     ngonInit(): void{
+//       this.products = this.ps.getProducts();
+//       //tightly coupled i.e. later changes  would have to be  
+//     }
+  }
+ // now html 
+//  <p> comp2 works!</p>
+
+//  <pre> product Values are : </pre>
+//  <div *ngFor="let p of prods">
+//  {{p.id}}--{{p.name}}
+//  </div>
+     

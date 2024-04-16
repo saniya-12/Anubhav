@@ -22,3 +22,5 @@ myString = "TypeScript is a SUPERSET of JavaScript"
 
   myArray : any[] = ['Apple', 'Banana', 'Orange', 'Grapes'];
 }
+
+

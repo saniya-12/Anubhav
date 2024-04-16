@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+<<<<<<< HEAD
 import { MoviesComponent } from './movies/movies.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { C3Component } from './c3/c3.component';
@@ -16,3 +17,21 @@ export const routes: Routes = [
 ];
 
 // ng g c componentname
+=======
+import { ParentComponent } from './parent/parent.component';
+import { PipesComponent } from './pipes/pipes.component';
+// import { pipecomponent } from "./pipes/pipes.component";
+
+export const routes: Routes = [
+    // {path:'pipes',component:pipesdemocomponent}
+    {path:'parent',component:ParentComponent},
+    {path:'pipes',component:PipesComponent },
+    {path:'login', redirectTo:'pipes'},
+    {path:'dashboard', redirectTo:'login'}
+    
+
+];
+
+
+
+>>>>>>> ec551ca (m)
